@@ -1,0 +1,328 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yash Shaw — Portfolio</title>
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap" rel="stylesheet">
+    <script defer="" src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-neutral-950 text-neutral-100 antialiased min-h-screen font-sans" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial">
+    <!-- Background accents -->
+    <div class="pointer-events-none fixed inset-0 -z-10">
+      <div class="absolute inset-0 bg-gradient-to-b from-neutral-950 via-neutral-900/60 to-neutral-950"></div>
+      <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[90vw] h-[90vw] rounded-full blur-3xl opacity-[0.06] bg-gradient-to-tr from-white to-transparent"></div>
+      <div class="absolute bottom-0 right-0 w-[45vw] h-[45vw] rounded-full blur-3xl opacity-[0.05] bg-gradient-to-tl from-zinc-400 to-transparent"></div>
+
+      <!-- Added subtle shiny glows -->
+      <div class="absolute top-[12vh] left-1/2 -translate-x-1/2 h-[38rem] w-[38rem] rounded-full blur-3xl opacity-[0.12] animate-pulse" style="background: radial-gradient(closest-side, rgba(255,255,255,0.18), rgba(255,255,255,0.08) 42%, transparent 70%);"></div>
+      <div class="absolute inset-x-0 top-28 mx-auto h-24 w-[80vw] rounded-full blur-2xl opacity-[0.08] animate-pulse" style="background: conic-gradient(from 180deg at 50% 50%, rgba(255,255,255,0.22), rgba(255,255,255,0.08), transparent, rgba(255,255,255,0.2));"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60 border-b border-white/10">
+      <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="h-8 w-8 rounded-md bg-white/5 border border-white/10 flex items-center justify-center tracking-tight text-sm font-semibold" style="font-family: Space Grotesk, Inter, ui-sans-serif">YS</div>
+          <span class="text-sm text-neutral-300/80">Profit-First Portfolio</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-6 text-sm text-neutral-300">
+          <a href="#about" class="hover:text-white transition-colors">About</a>
+          <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+          <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+        </nav>
+        <a href="#contact" class="inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-3.5 py-2 text-sm font-medium text-white hover:bg-white/10 hover:border-white/20 hover:shadow-[0_0_0_1px_rgba(255,255,255,.06)] transition">
+          <i data-lucide="send" class="h-4 w-4"></i>
+          Contact
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="mx-auto max-w-7xl px-6 pt-20 pb-14 sm:pt-28">
+        <div class="flex flex-col items-start gap-6">
+          <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-neutral-300">
+            <span class="inline-flex items-center gap-1.5">
+              <i data-lucide="zap" class="h-3.5 w-3.5"></i> BY The BEST
+            </span>
+            <span class="h-1 w-1 rounded-full bg-neutral-400/60"></span>
+            <span>FOR The BEST</span>
+          </div>
+
+          <!-- Title with letter-by-letter animation and glow -->
+          <div class="w-full">
+            <div class="relative">
+              <!-- Animated SVG heading -->
+              <svg role="img" aria-label="I’m Yash Shaw" class="w-full" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet" style="display:block">
+                <defs>
+                  <linearGradient id="smoke" x1="0" x2="1" y1="0" y2="0">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.96"></stop>
+                    <stop offset="100%" stop-color="#d4d4d8" stop-opacity="0.9"></stop>
+                  </linearGradient>
+                  <!-- Soft glow filter -->
+                  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="3" result="blur"></feGaussianBlur>
+                    <feMerge>
+                      <feMergeNode in="blur"></feMergeNode>
+                      <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                  </filter>
+                </defs>
+                <g transform="translate(0,150)">
+                  <text fill="url(#smoke)" filter="url(#softGlow)" style="font-family: Space Grotesk, Inter, ui-sans-serif; font-weight:600; letter-spacing:-0.02em; font-size: 108px;" class="tracking-tight">
+                    <tspan style="opacity:0">I<animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0s" fill="freeze"></animate></tspan>
+                    <tspan style="opacity:0">’<animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.06s" fill="freeze"></animate></tspan>
+                    <tspan style="opacity:0">m<animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.12s" fill="freeze"></animate></tspan>
+                    <tspan style="opacity:0"> <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.18s" fill="freeze"></animate></tspan>
+                    <tspan style="opacity:0">Y<animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.24s" fill="freeze"></animate></tspan>
+                    <tspan style="opacity:0">a<animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.30s" fill="freeze"></animate></tspan>
+                    <tspan style="opacity:0">s<animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.36s" fill="freeze"></animate></tspan>
+                    <tspan style="opacity:0">h<animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.42s" fill="freeze"></animate></tspan>
+                    <tspan style="opacity:0"> <animate attributeName="opacity" from="0" to="1" dur="0.2s" begin="0.48s" fill="freeze"></animate></tspan>
+                    <tspan style="opacity:0">S<animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.54s" fill="freeze"></animate></tspan>
+                    <tspan style="opacity:0">h<animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.60s" fill="freeze"></animate></tspan>
+                    <tspan style="opacity:0">a<animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.66s" fill="freeze"></animate></tspan>
+                    <tspan style="opacity:0">w<animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.72s" fill="freeze"></animate></tspan>
+                  </text>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <p class="text-xl sm:text-2xl md:text-[22px] text-neutral-300 tracking-tight max-w-2xl -mt-3 sm:-mt-4" style="font-weight:500">
+            I do business, I make money, I dominate.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="rounded-md border border-white/10 bg-white/5 px-3 py-2 text-[13px] text-neutral-200">
+              I don’t work for fun. I work for results.
+            </span>
+            <span class="rounded-md border border-white/10 bg-white/5 px-3 py-2 text-[13px] text-neutral-200">
+              Bring me a dying star ,Yes I CAN , Just Pay The Price
+            </span>
+          </div>
+
+          <div class="mt-4 flex items-center gap-5 text-sm text-neutral-400">
+            <div class="inline-flex items-center gap-2">
+              <i data-lucide="map-pin" class="h-4 w-4"></i>
+              Based , India
+            </div>
+            <span class="hidden sm:inline-block h-4 w-px bg-white/10"></span>
+            <div class="hidden sm:flex items-center gap-2">
+              <i data-lucide="sparkles" class="h-4 w-4"></i>
+              No fluff. Only outcomes.
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <a href="#contact" class="inline-flex items-center gap-3 rounded-lg border border-white/10 bg-white/10 px-5 py-3 text-sm font-semibold tracking-tight text-white hover:bg-white/15 hover:border-white/20 hover:translate-y-[-1px] hover:shadow-[0_8px_30px_rgba(255,255,255,0.06)] transition">
+              <i data-lucide="handshake" class="h-5 w-5"></i>
+              Contact Me
+              <i data-lucide="arrow-right" class="h-4 w-4"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider -->
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+      </div>
+
+      <!-- About -->
+      <section id="about" class="mx-auto max-w-7xl px-6 py-14 sm:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
+          <div class="md:col-span-5">
+            <h2 class="text-[28px] sm:text-[32px] md:text-[36px] tracking-tight font-semibold" style="font-family: Space Grotesk, Inter, ui-sans-serif">
+              About Me
+            </h2>
+          </div>
+          <div class="md:col-span-5">
+            <p class="text-[15px] sm:text-base leading-relaxed text-neutral-300 font-medium">
+              I do anything that pays.Tech Projects , Offline Business , Trading , If it makes money, I’m on it. Average ideas don’t survive here.
+            </p>
+            <div class="mt-5 inline-flex items-center gap-2 text-sm text-neutral-400">
+              <i data-lucide="map-pin" class="h-4 w-4"></i>
+              India
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider -->
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+      </div>
+
+      <!-- Skills -->
+      <section id="skills" class="mx-auto max-w-7xl px-6 py-14 sm:py-16">
+        <div class="mb-8">
+          <h2 class="text-[28px] sm:text-[32px] md:text-[36px] tracking-tight font-semibold" style="font-family: Space Grotesk, Inter, ui-sans-serif">
+            What I Do
+          </h2>
+          <p class="text-neutral-400 text-sm mt-1.5">Punchy, profit-first execution.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Tech Projects -->
+          <div class="group rounded-xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.05] transition p-5 sm:p-6">
+            <div class="flex items-start gap-4">
+              <div class="rounded-md border border-white/10 bg-white/5 p-2">
+                <i data-lucide="cpu" class="h-5 w-5 text-white/90"></i>
+              </div>
+              <div>
+                <h3 class="text-[18px] font-semibold tracking-tight mb-1.5">Tech Projects</h3>
+                <p class="text-neutral-300 text-sm">
+                  building solutions that disrupt
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Trading -->
+          <div class="group rounded-xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.05] transition p-5 sm:p-6">
+            <div class="flex items-start gap-4">
+              <div class="rounded-md border border-white/10 bg-white/5 p-2">
+                <i data-lucide="trending-up" class="h-5 w-5 text-white/90"></i>
+              </div>
+              <div>
+                <h3 class="text-[18px] font-semibold tracking-tight mb-1.5">Trading</h3>
+                <p class="text-neutral-300 text-sm">
+                  spotting opportunities, taking risks, making profit
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Offline Business -->
+          <div class="group rounded-xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.05] transition p-5 sm:p-6">
+            <div class="flex items-start gap-4">
+              <div class="rounded-md border border-white/10 bg-white/5 p-2">
+                <i data-lucide="building-2" class="h-5 w-5 text-white/90"></i>
+              </div>
+              <div>
+                <h3 class="text-[18px] font-semibold tracking-tight mb-1.5">Offline Business</h3>
+                <p class="text-neutral-300 text-sm">
+                  scaling ventures that others ignore
+                </p>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <!-- Anything that pays -->
+          <div class="group rounded-xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.05] transition p-5 sm:p-6">
+            <div class="flex items-start gap-4">
+              <div class="rounded-md border border-white/10 bg-white/5 p-2">
+                <i data-lucide="coins" class="h-5 w-5 text-white/90"></i>
+              </div>
+              <div>
+                <h3 class="text-[18px] font-semibold tracking-tight mb-1.5">Anything that pays</h3>
+                <p class="text-neutral-300 text-sm">
+                  I master the art of money-making
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider -->
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+      </div>
+
+      <!-- Contact / CTA -->
+      <section id="contact" class="mx-auto max-w-7xl px-6 py-14 sm:py-16">
+        <div class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-10">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div class="max-w-2xl">
+              <h3 class="text-[24px] sm:text-[28px] tracking-tight font-semibold" style="font-family: Space Grotesk, Inter, ui-sans-serif">
+                Think you can handle results? Let’s talk business.
+              </h3>
+              <p class="mt-2 text-neutral-300 text-sm">
+                No meetings without purpose. No promises without delivery.
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDZBXFnMgbqnVdlWvsbfPcWTxNFWVkLWknQWmmRBvXwMDTXcvRcjQVNDbFKDkrbGqhWNvKj" class="inline-flex items-center gap-3 rounded-lg border border-white/10 bg-white/10 px-5 py-3 text-sm font-semibold tracking-tight text-white hover:bg-white/15 hover:border-white/20 hover:-y-[-1px] hover:shadow-[0_8px_30px_rgba(255,255,255,0.06)] transition" target="_blank">
+                <i data-lucide="mail" class="h-5 w-"></i>
+                Contact Me
+                <i data-lucide="arrow-right" class="h-4 w-4"></i>
+              </a>
+              <!-- Replaced phone with GitHub -->
+              <a href="https://github.com/YashToOp" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-transparent px-4 py-3 text-sm font-medium text-neutral-200 hover:text-white hover:border-white/20 transition">
+                <i data-lucide="github" class="h-4 w-4"></i>
+                GitHub
+              </a>
+              <!-- Added Instagram -->
+              <a href="https://www.instagram.com/yash_canon/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-transparent px-4 py-3 text-sm font-medium text-neutral-200 hover:text-white hover:border-white/20 transition">
+                <i data-lucide="instagram" class="h-4 w-4"></i>
+                Instagram
+              </a>
+            </div>
+          </div>
+
+          <!-- Added form -->
+          <div class="mt-8 h-px w-full bg-white/10"></div>
+          <form action="#" method="POST" class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Name -->
+            <div class="flex flex-col gap-1.5">
+              <label for="name" class="text-sm text-neutral-300">Name</label>
+              <input id="name" name="name" type="text" required="" autocomplete="name" placeholder="Your full name" class="w-full rounded-lg border border-white/10 bg-white/5 px-3.5 py-3 text-sm text-neutral-100 placeholder-neutral-500 outline-none focus:border-white/20 focus:ring-4 focus:ring-white/10 transition">
+            </div>
+
+            <!-- Email only -->
+            <div class="flex flex-col gap-1.5">
+              <label for="email" class="text-sm text-neutral-300">Email</label>
+              <input id="email" name="email" type="email" required="" autocomplete="email" inputmode="email" placeholder="you@example.com" class="w-full rounded-lg border border-white/10 bg-white/5 px-3.5 py-3 text-sm text-neutral-100 placeholder-neutral-500 outline-none focus:border-white/20 focus:ring-4 focus:ring-white/10 transition">
+            </div>
+
+            <!-- Requirement -->
+            <div class="md:col-span-2 flex flex-col gap-1.5">
+              <label for="requirement" class="text-sm text-neutral-300">Requirement</label>
+              <textarea id="requirement" name="requirement" rows="5" required="" placeholder="Briefly describe what you need and your timeline" class="w-full rounded-lg border border-white/10 bg-white/5 px-3.5 py-3 text-sm text-neutral-100 placeholder-neutral-500 outline-none focus:border-white/20 focus:ring-4 focus:ring-white/10 transition"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <div class="md:col-span-2 flex items-center justify-between">
+              <p class="text-xs text-neutral-400">I read every request. Keep it concise.</p>
+              <button type="submit" class="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/10 px-4 py-2.5 text-sm font-semibold tracking-tight text-white hover:bg-white/15 hover:border-white/20 hover:translate-y-[-1px] hover:shadow-[0_8px_30px_rgba(255,255,255,0.06)] transition">
+                <i data-lucide="send" class="h-4 w-4"></i>
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mx-auto max-w-7xl px-6 pb-10">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-neutral-500 text-xs">
+        <span>© <span id="year">2025</span> Yash Shaw. All rights reserved.</span>
+        <span class="inline-flex items-center gap-2">
+          <i data-lucide="shield" class="h-3.5 w-3.5"></i>
+          Built for outcomes.
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      // Icons
+      document.addEventListener('DOMContentLoaded', function () {
+        if (window.lucide) {
+          lucide.createIcons({
+            attrs: { 'stroke-width': 1.5 }
+          });
+        }
+        // Year
+        var y = document.getElementById('year');
+        if (y) y.textContent = new Date().getFullYear();
+      });
+    </script>
+  
+</body></html>
